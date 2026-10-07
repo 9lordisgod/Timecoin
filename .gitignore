@@ -1,0 +1,162 @@
+# ---------------------------------------------------------------------------
+# Secrets and key material — never commit (defense in depth, not permission)
+# ---------------------------------------------------------------------------
+*.key
+*.pem
+*.p12
+*.pfx
+*.seed
+*.mnemonic
+*.secret
+*.wallet
+wallet*.dat
+wallets/
+.cookie
+*.cookie
+rpcauth*
+.env
+.env.*
+!.env.example
+timechain.conf
+timecoin.conf
+bitcoin.conf
+
+# ---------------------------------------------------------------------------
+# Chain data (*.dat and database files written by a node)
+# ---------------------------------------------------------------------------
+*.dat
+blocks/
+chainstate/
+indexes/
+datadir/
+regtest/
+testnet*/
+signet/
+*.ldb
+*.sst
+LOCK
+CURRENT
+MANIFEST-*
+LOG
+LOG.old
+debug.log
+*.log
+
+# ---------------------------------------------------------------------------
+# C++
+# ---------------------------------------------------------------------------
+*.o
+*.obj
+*.lo
+*.slo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.gch
+*.pch
+*.ilk
+*.pdb
+*.dSYM/
+compile_commands.json
+.cache/
+.clangd/
+
+# ---------------------------------------------------------------------------
+# CMake
+# ---------------------------------------------------------------------------
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CMakeUserPresets.json
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+DartConfiguration.tcl
+Testing/
+_deps/
+build/
+build-*/
+cmake-build-*/
+out/
+
+# ---------------------------------------------------------------------------
+# Rust
+# ---------------------------------------------------------------------------
+target/
+**/*.rs.bk
+# Cargo.lock is intentionally NOT ignored: commit it for binaries.
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+.eggs/
+dist/
+sdist/
+wheels/
+pip-wheel-metadata/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.DocumentRevisions-V100
+.com.apple.timemachine.donotpresent
+
+# ---------------------------------------------------------------------------
+# IDEs and editors
+# ---------------------------------------------------------------------------
+.vscode/
+*.code-workspace
+.idea/
+*.iml
+.fleet/
+.vs/
+*.suo
+*.user
+*.sln.docstates
+.project
+.cproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.#*
+\#*#
+.netrwhist
